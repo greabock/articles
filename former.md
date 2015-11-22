@@ -41,9 +41,9 @@ Former::close()
 Former был задуман как View helper – в том смысле, что он предоставляет тебе класс, который ты можешь использовать прямо во вьюхах, для вывода готового HTML-кода.
 
 ```php
-{{ Former::open()->method('GET') }}
-    {{ Former::text('name')->required() }}
-{{ Former::close() }}
+{!! Former::open()->method('GET') !!}
+    {!! Former::text('name')->required() !!}
+{!! Former::close() !!}
 ```
 *(шорттеги были заменены мной на blade-синтаксис - п.п.)*
 
